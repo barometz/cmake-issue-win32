@@ -21,6 +21,10 @@
 # the command line (either `-DCMAKE_GENERATOR_PLATFORM=Win32` or `-A Win32`)
 # everything works exactly fine.
 
+# Additionally, when I configure, build (fail), touch CMakeLists.txt, and build
+# again, it'll rerun configuration (which makes sense) and then select the
+# correct target for building.
+
 # Lowest version our dev systems have, 3.14 doesn't help
 cmake_minimum_required(VERSION 3.13)
 project(TestCmakeIssue CXX)
